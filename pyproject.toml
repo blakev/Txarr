@@ -1,0 +1,35 @@
+[project]
+authors = [
+	{name = "Blake VandeMerwe", email = "blakev@null.net"},
+]
+
+name = "txarr"
+version = "0.1.0"
+description = "Distrubted video transcoding platform for managing large multimedia libraries."
+readme = "README.md"
+requires-python = ">=3.13"
+
+dependencies = [
+    "aiofiles>=24.1.0",
+    "aioshutil>=1.5",
+    "cytoolz>=1.0.1",
+    "fastapi[standard]>=0.115.6",
+    "httpx>=0.28.1",
+    "humanize>=4.11.0",
+    "pendulum==3.0.0",
+    "pydantic>=2.10.4",
+    "scandir>=1.10.0",
+    "sqlmodel>=0.0.22",
+    "tenacity>=9.0.0",
+    "ujson>=5.10.0",
+    "uvicorn>=0.34.0",
+    "uvloop>=0.21.0",
+    "xxhash>=3.5.0",
+]
+
+[dependency-groups]
+dev = [
+    "codespell>=2.3.0",
+    "isort>=5.13.2",
+    "yapf>=0.43.0",
+]
